@@ -145,7 +145,7 @@ footer img fb {
     left: 70px
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:960px){
 #navigation {
     position: relative;
     bottom: 340px;
