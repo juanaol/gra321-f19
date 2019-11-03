@@ -1,5 +1,4 @@
 /* Styles for Project Styles*/
-* { box-sizing: border-box; }
 body {
     letter-spacing: .5 px;
     line-height: 1.5; 
@@ -10,6 +9,7 @@ body {
     color: #633303;
     font-size: 15px;
 }
+* { box-sizing: border-box; }
 #navigation {
     background-image: url(lines.png); 
 	background-size: 4%;
@@ -145,12 +145,13 @@ footer img fb {
     left: 70px
 }
 
-@media screen and (max-width:960px){
+
+@media (max-width: 600px){
 #navigation {
     position: relative;
     bottom: 340px;
     left: 125px;
-    }
+}
 nav {position: absolute;
     top: 105px;
     padding-right: 25px;
@@ -229,6 +230,5 @@ p {
 }
 li {
     line-height: 28px;     
-    }
+} 
 }
-    
