@@ -1,0 +1,234 @@
+/* Styles for Project Styles*/
+* { box-sizing: border-box; }
+body {
+    letter-spacing: .5 px;
+    line-height: 1.5; 
+    font-family: acumin-pro,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    color: #633303;
+    font-size: 15px;
+}
+#navigation {
+    background-image: url(lines.png); 
+	background-size: 4%;
+    height: 15px;
+    background-repeat: no-repeat;position: relative;
+    display: flex;
+    bottom: 780px;
+    left: 200px;
+}
+nav { background-color: #f9f2ec;
+    position: absolute;
+    top: 145px;
+    padding-right: 65px;
+    font-size: 25px;
+}
+nav a:link {
+    color: #633303;
+    text-decoration: none; 
+}
+nav a:visited {
+    color: #996633;
+}
+nav a:hover {
+    color: orange;
+}
+h1 {
+    font-weight: 700;
+    background-image: linear-gradient( #e6ccb3,#f9f2ec );
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 45px;
+    padding: 40px;
+}
+h2 {
+    margin:  0;
+    font-weight: 400;
+    background-color: #f5f2ef;
+    display: flex;
+    font-size: 40px;
+    padding: 30px;
+    padding-left: 120px;
+}
+h3 {
+    font-weight: 600;
+    color: darkorange;
+    background-color: #f5f2ef;
+    display: flex;
+    padding-left: 120px;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    font-size: 25px;
+}
+h4 {
+    font-weight: 600;
+    background-color: #fcf2e9;
+    padding: 30px;
+    padding-left: 120px;
+    margin-top: 0;
+    font-size: 25px;
+}
+h5 {
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 10;
+    margin-left: 120px;
+}
+.fs {
+    display: grid;
+    grid-template-columns: 950px 950px;
+    grid-template-rows: 50px 50px;
+    position: relative;
+    padding-left: 120px;
+    line-height: 100x; 
+    background-color: #f5f2ef;
+    padding-bottom: 90px;
+    font-size: 25px;
+    }
+.drinks { 
+    display: grid;
+    grid-template-columns: 950px 950px;
+    grid-template-rows: 50px 50px;
+    position: relative;
+    left: 50px; 
+    padding-bottom: 50px;
+    line-height: 100px;
+    font-size: 25px;
+}
+.contact h5  {
+    padding-bottom: 30px;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 2rem; 
+}
+li { margin-left: 12px;
+    line-height: 60px; 
+}
+footer { 
+    background-image: linear-gradient( #e6ccb3,#f9f2ec );
+    line-height: 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+footer a {
+    position: relative;
+    left: 45px;
+    bottom: 30px;
+}
+footer a:link {
+    color: #633303;
+   
+}
+footer a:visited {
+    color: #996633;
+}
+footer a:hover {
+    color: orange;
+}
+footer li {
+    margin-left: 4px;     
+}
+footer img {
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+footer img fb {
+    position: relative;
+    left: 70px
+}
+
+@media (max-width:768px){
+#navigation {
+    position: relative;
+    bottom: 340px;
+    left: 125px;
+    }
+nav {position: absolute;
+    top: 105px;
+    padding-right: 25px;
+    font-size: 15px;
+    line-height: 40px;
+    }
+h1 {
+    padding: 30px;
+    font-size: 32px;
+}
+h2 {
+    height: 50px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+h3 {
+    font-size: 15px;
+    padding-left: 50px;
+}
+h4 {
+    font-size: 15px;
+    padding-left: 50px;
+}
+h5 {
+    margin-left: 40px;
+    font-size: 15px;
+}
+.fs {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 40px 40px;
+    position: relative;
+    padding-left: 50px;
+    line-height: 100x; 
+    padding-bottom: 90px;
+    font-size: 15px;
+    }
+p { 
+    position: relative;
+    left: 50px;
+    bottom: 150px;
+    font-size: 12px;
+    height: 0;
+    padding-bottom: 0;
+    }
+.flavors p {
+    display: block;
+    position: relative;
+    bottom: 444px;
+    line-height: 290px;
+    height: 0px;
+    }
+.drinks { 
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 40px 40px;
+    line-height: 50px;
+    font-size: 15px;
+}
+.food {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 40px 40px;
+    position: relative;
+    left: 50px;
+    line-height: 40px;
+}
+.snacks { 
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 40px 40px;
+    position: relative;
+    left: 50px;
+    line-height: 40px; 
+    padding-bottom: 90px;
+}
+li {
+    line-height: 28px;     
+    }
+}
+    
