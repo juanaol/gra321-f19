@@ -1,29 +1,20 @@
-/* Styles for Project Styles*/
-body {
-    letter-spacing: .5 px;
-    line-height: 1.5; 
+body { letter-spacing: .5px;
     font-family: acumin-pro,sans-serif;
     font-weight: 200;
     font-style: normal;
     margin: 0;
     color: #633303;
-    font-size: 15px;
-}
+     }
 * { box-sizing: border-box; }
-#navigation {
-    background-image: url(lines.png); 
-	background-size: 4%;
-    height: 15px;
-    background-repeat: no-repeat;position: relative;
-    display: flex;
-    bottom: 780px;
-    left: 200px;
-}
 nav { background-color: #f9f2ec;
     position: absolute;
-    top: 145px;
-    padding-right: 65px;
+    top: 140px;
+    padding-right: 85px;
+    padding-bottom: 20px;
     font-size: 25px;
+}
+nav ul {
+    padding-left: 100px;
 }
 nav a:link {
     color: #633303;
@@ -38,16 +29,17 @@ nav a:hover {
 h1 {
     font-weight: 700;
     background-image: linear-gradient( #e6ccb3,#f9f2ec );
-    margin: 0;
+    margin: 0px;
     display: flex;
     width: 100%;
     font-size: 45px;
     padding: 40px;
+    padding-left: 100px;
 }
 h2 {
-    margin:  0;
+    margin: 0px;
     font-weight: 400;
-    background-color: #f5f2ef;
+    background-color: #FFEFE1;
     display: flex;
     font-size: 40px;
     padding: 30px;
@@ -69,7 +61,7 @@ h4 {
     background-color: #fcf2e9;
     padding: 30px;
     padding-left: 120px;
-    margin-top: 0;
+    margin: 0;
     font-size: 25px;
 }
 h5 {
@@ -77,54 +69,74 @@ h5 {
     font-size: 25px;
     padding: 5px;
     margin-top: 0;
-    margin-bottom: 10;
-    margin-left: 120px;
+    padding-top: 60px;
 }
 .fs {
     display: grid;
-    grid-template-columns: 950px 950px;
-    grid-template-rows: 50px 50px;
-    position: relative;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 80px 80px;
     padding-left: 120px;
-    line-height: 100x; 
-    background-color: #f5f2ef;
+    line-height: 120px; 
+    background-color: #FFEFE1;
     padding-bottom: 90px;
     font-size: 25px;
-    }
+}
+#fall-specials {
+    background-color: #FFEFE1;
+}
 .drinks { 
     display: grid;
-    grid-template-columns: 950px 950px;
-    grid-template-rows: 50px 50px;
-    position: relative;
-    left: 50px; 
+    grid-template-columns: 600px 600px;
+    padding-left: 120px; 
     padding-bottom: 50px;
     line-height: 100px;
     font-size: 25px;
+    background-color: #fcf2e9;
+}
+.food {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    padding-left: 120px;
+    line-height: 100px;
+    font-size: 25px;
+    background-color: #FCF5EF;
+}
+#menu-food {
+    background-color: #FCF5EF;
+}
+.snacks { 
+    display: grid;
+    grid-template-columns: 600px 600px;
+    padding-left: 120px;
+    line-height: 100px; 
+    padding-bottom: 90px;
+    font-size: 25px;
+    background-color: #FEF9F4;
+}
+#menu-snacks {
+    background-color: #FEF9F4;
 }
 .contact h5  {
     padding-bottom: 30px;
 }
 ul {
     list-style-type: none;
-    margin-bottom: 2rem; 
+    margin-bottom: 0px; 
+    padding-left: 0;
 }
-li { margin-left: 12px;
+li {
     line-height: 60px; 
 }
 footer { 
     background-image: linear-gradient( #e6ccb3,#f9f2ec );
     line-height: 20px;
     padding-top: 30px;
-    padding-bottom: 25px;
-}
-footer a {
-    position: relative;
-    left: 45px;
-    bottom: 30px;
+    padding-left: 125px;
+    padding-bottom: 85px;
+    font-size: 25px;
 }
 footer a:link {
     color: #633303;
-   
 }
 footer a:visited {
     color: #996633;
@@ -132,103 +144,11 @@ footer a:visited {
 footer a:hover {
     color: orange;
 }
-footer li {
-    margin-left: 4px;     
-}
 footer img {
     position: relative;
-    left: 40px;
-    bottom: 10px;
+    left: 60px;
 }
 footer img fb {
     position: relative;
-    left: 70px
-}
-
-
-@media (min-width: 768px){
-#navigation {
-    position: relative;
-    bottom: 340px;
-    left: 125px;
-}
-nav {position: absolute;
-    top: 105px;
-    padding-right: 25px;
-    font-size: 15px;
-    line-height: 40px;
-    }
-h1 {
-    padding: 30px;
-    font-size: 32px;
-}
-h2 {
-    height: 50px;
-    padding-left: 50px;
-    font-size: 25px;
-}
-h3 {
-    font-size: 15px;
-    padding-left: 50px;
-}
-h4 {
-    font-size: 15px;
-    padding-left: 50px;
-}
-h5 {
-    margin-left: 40px;
-    font-size: 15px;
-}
-.fs {
-    display: grid;
-    grid-template-columns: 270px 270px;
-    grid-template-rows: 40px 40px;
-    position: relative;
-    padding-left: 50px;
-    line-height: 100x; 
-    padding-bottom: 90px;
-    font-size: 15px;
-    }
-p { 
-    position: relative;
-    left: 50px;
-    bottom: 150px;
-    font-size: 12px;
-    height: 0;
-    padding-bottom: 0;
-    }
-.flavors p {
-    display: block;
-    position: relative;
-    bottom: 444px;
-    line-height: 290px;
-    height: 0px;
-    }
-.drinks { 
-    display: grid;
-    grid-template-columns: 270px 270px;
-    grid-template-rows: 40px 40px;
-    line-height: 50px;
-    font-size: 15px;
-}
-.food {
-    display: grid;
-    grid-template-columns: 370px 370px;
-    grid-template-rows: 40px 40px;
-    position: relative;
-    left: 50px;
-    line-height: 40px;
-}
-.snacks { 
-    display: grid;
-    grid-template-columns: 370px 370px;
-    grid-template-rows: 40px 40px;
-    position: relative;
-    left: 50px;
-    line-height: 40px; 
-    padding-bottom: 90px;
-}
-li {
-    line-height: 28px;     
-} 
+    left: 60px
 }
