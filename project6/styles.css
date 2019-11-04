@@ -137,6 +137,9 @@ footer {
     padding-bottom: 85px;
     font-size: 25px;
 }
+footer ul {
+    padding-left: 0px;
+}
 footer a:link {
     color: #633303;
 }
@@ -148,15 +151,11 @@ footer a:hover {
 }
 footer img {
     position: relative;
-    left: 60px;
-}
-footer img fb {
-    position: relative;
-    left: 60px
+    left: 0px;
+    padding-top: 30px; 
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 nav { 
     top: 105px;
     padding-right: 20px;
