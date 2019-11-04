@@ -186,7 +186,7 @@ h5 {
 }
 .fs {
     display: grid;
-    grid-template-columns: 235px 235px;
+    grid-template-columns: 220px 230px;
     grid-template-rows: 40px 40px;
     position: relative;
     padding-left: 50px;
@@ -196,23 +196,25 @@ h5 {
 }
 .drinks { 
     display: grid;
-    grid-template-columns: 235px 235px;
+    grid-template-columns: 220px 230px;
     padding-left: 50px;
     grid-template-rows: 40px 40px;
     font-size: 15px;
 }
 .food {
     display: grid;
-    grid-template-columns: 235px 235px;
+    grid-template-columns: 220px 230px;
     grid-template-rows: 40px 40px;
+    padding-left: 50px;
     line-height: 40px;
     font-size: 15px;
 }
 .snacks { 
     display: grid;
-    grid-template-columns: 235px 235px;
+    grid-template-columns: 220px 230px;
     grid-template-rows: 40px 40px;
     line-height: 40px; 
+    padding-left: 50px;
     padding-bottom: 90px;
     font-size: 15px;
 }
@@ -221,5 +223,6 @@ li {
 } 
 footer { 
     font-size: 15px;
+    padding-left: 50px;
     }
 }
