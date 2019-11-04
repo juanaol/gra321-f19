@@ -5,11 +5,73 @@
         <link rel="stylesheet" href="https://use.typekit.net/foh3qti.css">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <h1>Charlie's Cafe</h1>
-        <img src="coffee.jpg" alt="coffee cups in table" height="100%" width="100%"/>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="coffee.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="muffin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="sandwhich.jpg" style="width:100%">
+  </div>
+    
+ <div class="mySlides fade">
+    <img src="tea.jpg" style="width:100%">
+ </div>
+    
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
     <nav>
+    <div class="topnav" id="myTopnav">
         <ul>
             <li><a class="button" href="#fall-specials">Fall Specials</a></li>
             <li>
@@ -18,7 +80,11 @@
             <li><a class="button" href="#menu-snacks">Snacks</a></li>
             <li><a class="button" href="#contact">About Us</a></li>
         </ul>	
-		</nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    </nav>
     <h2>Menu</h2>
     <h3 id="fall-specials">Fall Specials</h3>
         <div class="fs">
