@@ -6,7 +6,8 @@ body { letter-spacing: .5px;
     color: #633303;
      }
 * { box-sizing: border-box; }
-nav { background-color: #f9f2ec;
+nav {
+    background-color: #f9f2ec;
     position: absolute;
     top: 140px;
     padding-right: 85px;
@@ -44,6 +45,7 @@ h2 {
     font-size: 40px;
     padding: 30px;
     padding-left: 120px;
+    padding-bottom: 40px;
 }
 h3 {
     font-weight: 600;
@@ -83,6 +85,7 @@ h5 {
 }
 #fall-specials {
     background-color: #FFEFE1;
+    
 }
 .drinks { 
     display: grid;
@@ -121,8 +124,7 @@ h5 {
 }
 ul {
     list-style-type: none;
-    margin-bottom: 0px; 
-    padding-left: 0;
+    margin-bottom: 0px;
 }
 li {
     line-height: 60px; 
@@ -156,16 +158,18 @@ footer img fb {
 
 @media (max-width: 600px) {
 nav { 
-    display: flex;
-    position: absolute;
     top: 105px;
-    padding-right: 25px;
+    padding-right: 20px;
     font-size: 15px;
     line-height: 40px;
-    }
+}
+nav ul {
+    padding-left: 50px;
+}    
 h1 {
     padding: 30px;
     font-size: 32px;
+    padding-left: 50px;
 }
 h2 {
     height: 50px;
@@ -181,17 +185,14 @@ h4 {
     padding-left: 50px;
 }
 h5 {
-    margin-left: 40px;
     font-size: 15px;
 }
 .fs {
     display: grid;
     grid-template-columns: 220px 230px;
-    grid-template-rows: 40px 40px;
-    position: relative;
+    grid-template-rows: 40px 40px 40px;
     padding-left: 50px;
-    line-height: 100x; 
-    padding-bottom: 90px;
+    line-height: 50px; 
     font-size: 15px; 
 }
 .drinks { 
@@ -200,6 +201,7 @@ h5 {
     padding-left: 50px;
     grid-template-rows: 40px 40px;
     font-size: 15px;
+    line-height: 50px;
 }
 .food {
     display: grid;
@@ -224,5 +226,14 @@ li {
 footer { 
     font-size: 15px;
     padding-left: 50px;
+}
+footer ul {
+    padding-left: 5px;
     }
+footer img {
+    position: relative;
+    top: 30px;
+    left: 5px;
+    padding: 2px;
+}
 }
