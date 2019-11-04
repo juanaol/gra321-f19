@@ -152,3 +152,15 @@ footer img fb {
     position: relative;
     left: 60px
 }
+
+
+@media (max-width: 600px) {
+nav { 
+    display: flex;
+    position: absolute;
+    top: 105px;
+    padding-right: 25px;
+    font-size: 15px;
+    line-height: 40px;
+    }
+}
