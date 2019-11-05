@@ -8,7 +8,7 @@ body { letter-spacing: .5px;
 * { box-sizing: border-box; }
 nav {
     position: absolute;
-    top: 140px;
+    top: 120px;
     padding-right: 85px;
     padding-bottom: 20px;
     font-size: 25px;
@@ -28,14 +28,14 @@ nav a:hover {
 }
 #sidebar{
    position: relative;
-   width: 200px;
-   height: 40%;
+   width: 300px;
+   height: 100%;
    background: #f9f2ec;
-   left: -200px;
+   left: -300px;
    transition: all 500ms linear;
   }
 #sidebar.active {
-   left:0px;
+   left: 0px;
   }
 #sidebar ul li{
    color: rgba(230,230,230,0.9);
@@ -44,10 +44,9 @@ nav a:hover {
    border-bottom: .25px solid #996633;
   }
 #sidebar .toggle-btn {
-
    position: absolute;
-   left: 250px;
-   top: 20px;
+   left: 350px;
+   top: 10px;
   }
 #sidebar .toggle-btn span {
    display: block;
@@ -143,7 +142,7 @@ h1 {
 h2 {
     margin: 0px;
     font-weight: 400;
-    background-color: #FFEFE1;
+    background-color: #eedecd;
     display: flex;
     font-size: 40px;
     padding: 30px;
@@ -163,7 +162,7 @@ h3 {
 }
 h4 {
     font-weight: 600;
-    background-color: #fcf2e9;
+    background-color: #f4e9de;
     padding: 30px;
     padding-left: 120px;
     margin: 0;
@@ -182,12 +181,12 @@ h5 {
     grid-template-rows: 80px 80px;
     padding-left: 120px;
     line-height: 120px; 
-    background-color: #FFEFE1;
+    background-color: #eedecd;
     padding-bottom: 90px;
     font-size: 25px;
 }
 #fall-specials {
-    background-color: #FFEFE1;
+    background-color: #eedecd;
     
 }
 .drinks { 
@@ -197,7 +196,7 @@ h5 {
     padding-bottom: 50px;
     line-height: 100px;
     font-size: 25px;
-    background-color: #fcf2e9;
+    background-color: #f4e9de;
 }
 .food {
     display: grid;
@@ -205,10 +204,10 @@ h5 {
     padding-left: 120px;
     line-height: 100px;
     font-size: 25px;
-    background-color: #FCF5EF;
+    background-color: #f8f0e9;
 }
 #menu-food {
-    background-color: #FCF5EF;
+    background-color: #f8f0e9;
 }
 .snacks { 
     display: grid;
@@ -217,10 +216,10 @@ h5 {
     line-height: 100px; 
     padding-bottom: 90px;
     font-size: 25px;
-    background-color: #FEF9F4;
+    background-color: #FCF6F0;
 }
 #menu-snacks {
-    background-color: #FEF9F4;
+    background-color: #FCF6F0;
 }
 .contact h5  {
     padding-bottom: 30px;
@@ -258,16 +257,34 @@ footer img {
     padding-top: 30px; 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 nav { 
-    top: 105px;
+    top: 90px;
     padding-right: 20px;
     font-size: 15px;
     line-height: 40px;
 }
 nav ul {
     padding-left: 50px;
-}   
+} 
+#sidebar{
+   width: 200px;
+   height: 40%;
+   left: -200px;
+  }
+#sidebar ul li{
+   padding: 10px 10px;
+  }
+#sidebar .toggle-btn {
+   position: absolute;
+   left: 250px;
+   top: 10px;
+  }
+#sidebar .toggle-btn span {
+   width: 30px;
+   height: 5px;
+   margin: 5px 0px;
+}
 .prev, .next {
     top: 25%;
 }
