@@ -7,7 +7,6 @@ body { letter-spacing: .5px;
      }
 * { box-sizing: border-box; }
 nav {
-    background-color: #f9f2ec;
     position: absolute;
     top: 140px;
     padding-right: 85px;
@@ -27,6 +26,37 @@ nav a:visited {
 nav a:hover {
     color: orange;
 }
+#sidebar{
+   position: relative;
+   width: 200px;
+   height: 40%;
+   background: #f9f2ec;
+   left: -200px;
+   transition: all 500ms linear;
+  }
+#sidebar.active {
+   left:0px;
+  }
+#sidebar ul li{
+   color: rgba(230,230,230,0.9);
+   list-style: none;
+   padding: 10px 10px;
+   border-bottom: .25px solid #996633;
+  }
+#sidebar .toggle-btn {
+
+   position: absolute;
+   left: 250px;
+   top: 20px;
+  }
+#sidebar .toggle-btn span {
+   display: block;
+   width: 30px;
+   height: 5px;
+   background: #f9f2ec;
+   margin: 5px 0px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -228,7 +258,7 @@ footer img {
     padding-top: 30px; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 nav { 
     top: 105px;
     padding-right: 20px;

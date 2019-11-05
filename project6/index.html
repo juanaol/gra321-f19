@@ -71,7 +71,13 @@ function showSlides(n) {
 }
 </script>
     <nav>
-    <div class="topnav" id="myTopnav">
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()"><a>
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+        </div>
         <ul>
             <li><a class="button" href="#fall-specials">Fall Specials</a></li>
             <li>
@@ -79,11 +85,26 @@ function showSlides(n) {
             <li><a class="button" href="#menu-food">Food</a></li>
             <li><a class="button" href="#menu-snacks">Snacks</a></li>
             <li><a class="button" href="#contact">About Us</a></li>
-        </ul>	
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
+        </ul>
+             <script type="text/javascript">
+  function toggleSidebar(){
+   document.getElementById("sidebar").classList.toggle('active');
+  }
+ </script>
     </div>
+    <script>
+    * Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
     </nav>
     <h2>Menu</h2>
     <h3 id="fall-specials">Fall Specials</h3>
