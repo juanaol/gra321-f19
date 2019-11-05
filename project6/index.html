@@ -41,56 +41,56 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
-<script>
-    var slideIndex = 1;
-showSlides(slideIndex);
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
+                </script>
     <nav>
     <div id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()"><a>
-        <span></span>
-        <span></span>
-        <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </a>
         </div>
-        <ul>
-            <li><a class="button" href="#fall-specials">Fall Specials</a></li>
-            <li>
-            <a class="button" href="#menu-drink">Drinks</a></li>
-            <li><a class="button" href="#menu-food">Food</a></li>
-            <li><a class="button" href="#menu-snacks">Snacks</a></li>
-            <li><a class="button" href="#contact">About Us</a></li>
-        </ul>
+            <ul>
+                <li><a class="button" href="#fall-specials">Fall Specials</a></li>
+                <li>
+                <a class="button" href="#menu-drink">Drinks</a></li>
+                <li><a class="button" href="#menu-food">Food</a></li>
+                <li><a class="button" href="#menu-snacks">Snacks</a></li>
+                <li><a class="button" href="#contact">About Us</a></li>
+            </ul>
         <script type="text/javascript">
-  function toggleSidebar(){
-   document.getElementById("sidebar").classList.toggle('active');
-  }
+            function toggleSidebar(){
+        document.getElementById("sidebar").classList.toggle('active');
+        }
         </script>
     </div>
     </nav>
@@ -163,7 +163,7 @@ function showSlides(n) {
         </div>
     <footer>
     <h5 id="contact">Contact Us</h5>
-    <a href="charliescafe@email.com">charliescafe@email.com</a>
+        <a href="charliescafe@email.com">charliescafe@email.com</a>
     <h5>Hours</h5>
         <ul>
             <li>Mon-Th: 7am-4pm</li>
